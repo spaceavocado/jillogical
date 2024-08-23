@@ -1,4 +1,4 @@
-package com.spaceavocado.kernel.operand;
+package com.spaceavocado.kernel.operand.value;
 
 import java.util.HashMap;
 
