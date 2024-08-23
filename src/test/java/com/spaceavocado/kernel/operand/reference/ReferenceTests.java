@@ -235,8 +235,7 @@ public class ReferenceTests {
             assertEquals(expected.toString(), simplified.toString());
         } else {
             assertEquals(simplified, expected);
-        }
-        
+        } 
     }
 
     private static Stream<Arguments> toNumberData() {

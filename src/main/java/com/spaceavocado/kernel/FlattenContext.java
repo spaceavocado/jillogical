@@ -32,8 +32,7 @@ public class FlattenContext<TKey, TValue> extends HashMap<TKey, TValue> {
         }
         
         if (value instanceof Object[] array) {
-            for (var i = 0; i < array.length; i++)
-            {
+            for (var i = 0; i < array.length; i++) {
                 lookup(context, array[i], String.format("%s[%s]", path, i));
             }
         } 
