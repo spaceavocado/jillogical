@@ -61,7 +61,7 @@ public class Reference implements IEvaluable {
 
     @Override
     public Object serialize() {
-        return serializeOptions.To(
+        return serializeOptions.to(
             dataType != DataType.Undefined
                 ? String.format("%s.(%s)", path, dataType)
                 : path

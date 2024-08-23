@@ -58,6 +58,32 @@ public class ReferenceTests {
         );
     }
 
+    private static Stream<Arguments> defaultSerializeOptionsFromData() {
+        return Stream.of(
+            Arguments.of("", null),
+            Arguments.of("ref", null),
+            Arguments.of("$ref", "ref")
+        );
+    }
+
+    @ParameterizedTest
+    @MethodSource("defaultSerializeOptionsFromData")
+    public void defaultSerializeOptionsFrom(String input, Object expected) {
+        assertEquals(expected, new DefaultSerializeOptions().from(input));
+    }
+
+    private static Stream<Arguments> defaultSerializeOptionsToData() {
+        return Stream.of(
+            Arguments.of("ref", "$ref")
+        );
+    }
+
+    @ParameterizedTest
+    @MethodSource("defaultSerializeOptionsToData")
+    public void defaultSerializeOptionsTo(String input, Object expected) {
+        assertEquals(expected, new DefaultSerializeOptions().to(input));
+    }
+
     private static Stream<Arguments> isIgnoredPathData() {
         return Stream.of(
             Arguments.of("path", null, null, false),
