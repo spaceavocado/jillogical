@@ -3,10 +3,47 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.spaceavocado</groupId>
+    <groupId>com.spaceavocado.jillogical</groupId>
     <artifactId>jillogical</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>illogical</name>
+    <description>A micro conditional Java engine used to parse the raw logical and comparison expressions, evaluate the expression in the given data context, and provide access to a text form of the given expressions.</description>
+    <url>https://github.com/spaceavocado/cillogical</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>David Horak</name>
+            <email>info@davidhorak.com</email>
+            <organization>Space Avocado</organization>
+            <organizationUrl>https://spaceavocado.com/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com:spaceavocado/jillogical.git</connection>
+        <developerConnection>scm:git:ssh://github.com:spaceavocado/jillogical.git</developerConnection>
+        <url>https://github.com/spaceavocado/jillogical</url>
+    </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -14,19 +51,15 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
             <version>5.11.0</version>
         </dependency>
-
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.11.0</version>
         </dependency>
-
     </dependencies>
 </project>
