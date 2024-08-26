@@ -10,7 +10,7 @@ import com.spaceavocado.jillogical.kernel.operand.reference.ISimplifyOptions;
 import com.spaceavocado.jillogical.kernel.parser.Operator;
 import com.spaceavocado.jillogical.kernel.parser.Parser;
 
-public class Illogical {
+public final class Illogical {
     private Parser parser;
 
     public Illogical() {

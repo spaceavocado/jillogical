@@ -78,7 +78,7 @@ This project has been developed to provide C// implementation of [spaceavocado/i
 # Basic Usage
 
 ```java
-import com.spaceavocado.Illogical;
+import com.spaceavocado.jillogical.Illogical;
 
 // Create a new instance of the engine
 var illogical = new Illogical();
