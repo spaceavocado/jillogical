@@ -9,6 +9,7 @@ Other implementations:
 - [GO](https://github.com/spaceavocado/goillogical)
 - [Python](https://github.com/spaceavocado/pyillogical)
 - [C#](https://github.com/spaceavocado/cillogical)
+- [Odin](https://github.com/spaceavocado/oillogical)
 
 ## About
 
